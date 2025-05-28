@@ -51,11 +51,18 @@
       box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
     }
 
-    /* About me */
-    #about p {
+    /* Paragraphs and lists styling */
+    p, ul, li {
       font-size: 1.1rem;
       color: #444;
-      line-height: 1.8;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    li {
+      margin-bottom: 8px;
     }
 
     /* Skills list */
@@ -64,6 +71,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      padding-left: 0;
+      margin-top: 12px;
     }
     #skills li {
       background: #3498db;
@@ -84,6 +93,7 @@
     #certificates ul {
       list-style: none;
       padding-left: 0;
+      margin-top: 12px;
     }
     #certificates li {
       background: #e8f0fe;
@@ -171,11 +181,52 @@
     </p>
   </section>
 
+  <!-- Professional Summary Section -->
+  <section id="professional-summary" aria-label="Professional Summary">
+    <h2>Professional Summary</h2>
+    <p>
+      Dedicated and curious third-year B.Tech student in Artificial Intelligence and Data Science with a strong interest in machine learning and data-driven problem solving. Currently indulging in and consistently improving my skills in machine learning, Python, and data analytics through academic projects, self-learning, and hands-on experimentation. Passionate about understanding global challenges and applying data science techniques to develop practical, impactful solutions. Eager to join innovative teams where I can continuously learn, grow, and contribute meaningfully to the evolving field of data science.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" aria-label="Education">
+    <h2>Education</h2>
+    <h3>Higher Secondary Education</h3>
+    <p>
+      <strong>KSR Matric Hr Sec School, Thirupathur, Tamil Nadu, India</strong><br />
+      Completed: 2023<br />
+      Stream: Computer Science<br />
+      Percentage: 93%
+    </p>
+    <h3>B.Tech in Artificial Intelligence and Data Science</h3>
+    <p>
+      <strong>SIMATS Engineering, Chennai, India</strong><br />
+      2023 – 2027 (Pursuing)<br />
+      CGPA: 9.17 / 10<br />
+      Highlight: Top 5% in NPTEL “Python for Data Science” – Silver Badge<br />
+      Domain of Interest: Data Science
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" aria-label="Projects">
+    <h2>Projects</h2>
+    <h3>Project 1: Air Pollution Prediction</h3>
+    <ul>
+      <li><strong>Description:</strong> Developed a predictive model for Air Quality Index (AQI) using XGBoost, and Linear Regression. The dataset was preprocessed and analyzed using Python in Jupyter Notebook.</li>
+      <li><strong>Technologies:</strong> Python, Jupyter Notebook, TensorFlow, scikit-learn</li>
+      <li><strong>Role:</strong> Collected data from Kaggle, performed preprocessing and feature engineering, and implemented multiple machine learning models for comparative analysis.</li>
+    </ul>
+  </section>
+
   <!-- Skills Section -->
   <section id="skills" aria-label="Skills">
     <h2>Skills</h2>
     <ul>
       <li>Python</li>
+      <li>R</li>
+      <li>SQL</li>
       <li>Machine Learning</li>
       <li>Deep Learning</li>
       <li>Data Visualization</li>
@@ -183,8 +234,9 @@
       <li>NumPy</li>
       <li>Scikit-learn</li>
       <li>TensorFlow</li>
-      <li>SQL</li>
-      <li>Git & GitHub</li>
+      <li>Jupyter Notebook</li>
+      <li>Spyder</li>
+      <li>RStudio</li>
     </ul>
   </section>
 
@@ -222,10 +274,10 @@
     // Certificates data (dynamic)
     const certificates = [
       "NPTEL - Python for Data Science (83% score)",
-      "Coursera - Machine Learning by Andrew Ng",
-      "Udemy - Deep Learning A-Z",
-      "Google Data Analytics Professional Certificate",
-      "Kaggle - Data Science Foundations",
+      "Udemy - Machine Learning and Deep Learning using Python and R",
+      "Oracle DBMS - Professional certification (80% score)",
+      "Data Structure basic using C",
+      "CISCO - CCNA Cybersecurity & switching/routing",
     ];
 
     // Populate certificates list dynamically
