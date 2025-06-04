@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Monesh's Portfolio</title>
   <style>
-    /* Reset & basics */
     * {
       margin: 0; padding: 0; box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,8 +36,6 @@
       color: #555;
       font-style: italic;
     }
-
-    /* Section styling */
     section {
       background: white;
       padding: 25px 30px;
@@ -50,8 +47,6 @@
     section:hover {
       box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
     }
-
-    /* Paragraphs and lists styling */
     p, ul, li {
       font-size: 1.1rem;
       color: #444;
@@ -64,8 +59,6 @@
     li {
       margin-bottom: 8px;
     }
-
-    /* Skills list */
     #skills ul {
       list-style: none;
       display: flex;
@@ -88,8 +81,6 @@
     #skills li:hover {
       background: #2980b9;
     }
-
-    /* Certificates */
     #certificates ul {
       list-style: none;
       padding-left: 0;
@@ -109,8 +100,6 @@
     #certificates li:hover {
       background-color: #d2e3fc;
     }
-
-    /* Contact */
     #contact form {
       display: flex;
       flex-direction: column;
@@ -146,8 +135,6 @@
     #contact button:hover {
       background: #2980b9;
     }
-
-    /* Footer */
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -155,8 +142,14 @@
       margin-top: 40px;
       user-select: none;
     }
-
-    /* Responsive */
+    pre {
+      background: #f4f6f9;
+      padding: 15px;
+      border-left: 5px solid #3498db;
+      font-family: monospace;
+      overflow-x: auto;
+      margin-bottom: 10px;
+    }
     @media (max-width: 600px) {
       body {
         padding: 15px;
@@ -173,94 +166,76 @@
     <p>Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
   </header>
 
-  <!-- About Me Section -->
-  <section id="about" aria-label="About Me">
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      Hello! I'm Monesh, a passionate data scientist with a strong background in machine learning, deep learning, and data analysis. I love transforming raw data into meaningful insights and solving challenging problems through data-driven solutions.
-    </p>
+    <p>Hello! I'm Monesh, a passionate data scientist with a strong background in machine learning, deep learning, and data analysis. I love transforming raw data into meaningful insights and solving challenging problems through data-driven solutions.</p>
   </section>
 
-  <!-- Professional Summary Section -->
-  <section id="professional-summary" aria-label="Professional Summary">
+  <section id="professional-summary">
     <h2>Professional Summary</h2>
-    <p>
-      Dedicated and curious third-year B.Tech student in Artificial Intelligence and Data Science with a strong interest in machine learning and data-driven problem solving. Currently indulging in and consistently improving my skills in machine learning, Python, and data analytics through academic projects, self-learning, and hands-on experimentation. Passionate about understanding global challenges and applying data science techniques to develop practical, impactful solutions. Eager to join innovative teams where I can continuously learn, grow, and contribute meaningfully to the evolving field of data science.
-    </p>
+    <p>Dedicated and curious third-year B.Tech student in Artificial Intelligence and Data Science with a strong interest in machine learning and data-driven problem solving. Currently indulging in and consistently improving my skills in machine learning, Python, and data analytics through academic projects, self-learning, and hands-on experimentation. Passionate about understanding global challenges and applying data science techniques to develop practical, impactful solutions. Eager to join innovative teams where I can continuously learn, grow, and contribute meaningfully to the evolving field of data science.</p>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" aria-label="Education">
+  <section id="education">
     <h2>Education</h2>
     <h3>Higher Secondary Education</h3>
-    <p>
-      <strong>KSR Matric Hr Sec School, Thirupathur, Tamil Nadu, India</strong><br />
-      Completed: 2023<br />
-      Stream: Computer Science<br />
-      Percentage: 93%
-    </p>
+    <p><strong>KSR Matric Hr Sec School, Thirupathur, Tamil Nadu, India</strong><br>Completed: 2023<br>Stream: Computer Science<br>Percentage: 93%</p>
     <h3>B.Tech in Artificial Intelligence and Data Science</h3>
-    <p>
-      <strong>SIMATS Engineering, Chennai, India</strong><br />
-      2023 – 2027 (Pursuing)<br />
-      CGPA: 9.17 / 10<br />
-      Highlight: Top 5% in NPTEL “Python for Data Science” – Silver Badge<br />
-      Domain of Interest: Data Science
-    </p>
+    <p><strong>SIMATS Engineering, Chennai, India</strong><br>2023 – 2027 (Pursuing)<br>CGPA: 9.17 / 10<br>Highlight: Top 5% in NPTEL “Python for Data Science” – Silver Badge<br>Domain of Interest: Data Science</p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" aria-label="Projects">
+  <section id="projects">
     <h2>Projects</h2>
     <h3>Project 1: Air Pollution Prediction</h3>
     <ul>
-      <li><strong>Description:</strong> Developed a predictive model for Air Quality Index (AQI) using XGBoost, and Linear Regression. The dataset was preprocessed and analyzed using Python in Jupyter Notebook.</li>
+      <li><strong>Description:</strong> Developed a predictive model for Air Quality Index (AQI) using XGBoost, and Linear Regression.</li>
       <li><strong>Technologies:</strong> Python, Jupyter Notebook, TensorFlow, scikit-learn</li>
       <li><strong>Role:</strong> Collected data from Kaggle, performed preprocessing and feature engineering, and implemented multiple machine learning models for comparative analysis.</li>
     </ul>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" aria-label="Skills">
+  <section id="model-comparison">
+    <h2>Project 2: Model Comparison for Anemia Classification</h2>
+    <ul>
+      <li><strong>Description:</strong> Developed and compared K-Nearest Neighbors and Logistic Regression to predict anemia based on health features.</li>
+      <li><strong>Goal:</strong> Identify the most accurate and reliable classification model for anemia prediction.</li>
+      <li><strong>Technologies:</strong> Python, scikit-learn, Matplotlib, Seaborn, Jupyter Notebook</li>
+      <li><strong>Performance:</strong></li>
+      <ul>
+        <li>KNN Accuracy (Test): 98.94%</li>
+        <li>Logistic Regression Accuracy (Test): 99.298%</li>
+      </ul>
+      <li><strong>Confusion Matrices (Text View):</strong></li>
+      <pre id="knn-matrix">Loading KNN matrix...</pre>
+      <pre id="logreg-matrix">Loading Logistic Regression matrix...</pre>
+      <li><strong>Accuracy Comparison Plot:</strong></li>
+      <p><img src="images/accuracy_comparison.png" alt="Accuracy Comparison Plot" style="width:600px;margin-top:15px;" /></p>
+    </ul>
+  </section>
+
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Python</li>
-      <li>R</li>
-      <li>SQL</li>
-      <li>Machine Learning</li>
-      <li>Deep Learning</li>
-      <li>Data Visualization</li>
-      <li>Pandas</li>
-      <li>NumPy</li>
-      <li>Scikit-learn</li>
-      <li>TensorFlow</li>
-      <li>Jupyter Notebook</li>
-      <li>Spyder</li>
-      <li>RStudio</li>
+      <li>Python</li><li>R</li><li>SQL</li><li>Machine Learning</li><li>Deep Learning</li>
+      <li>Data Visualization</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li>
+      <li>TensorFlow</li><li>Jupyter Notebook</li><li>Spyder</li><li>RStudio</li>
     </ul>
   </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates" aria-label="Certificates">
+  <section id="certificates">
     <h2>Certificates</h2>
-    <ul id="cert-list">
-      <!-- Dynamically filled by JS -->
-    </ul>
+    <ul id="cert-list"></ul>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" aria-label="Contact Me">
+  <section id="contact">
     <h2>Contact Me</h2>
     <form id="contact-form" novalidate>
       <label for="name">Name</label>
       <input type="text" id="name" placeholder="Your name" required />
-
       <label for="email">Email</label>
       <input type="email" id="email" placeholder="Your email" required />
-
       <label for="message">Message</label>
       <textarea id="message" rows="5" placeholder="Write your message here" required></textarea>
-
       <button type="submit">Send Message</button>
     </form>
     <p id="form-msg" role="alert" style="margin-top:12px; color:green; display:none;"></p>
@@ -271,16 +246,13 @@
   </footer>
 
   <script>
-    // Certificates data (dynamic)
     const certificates = [
       "NPTEL - Python for Data Science (83% score)",
       "Udemy - Machine Learning and Deep Learning using Python and R",
       "Oracle DBMS - Professional certification (80% score)",
       "Data Structure basic using C",
-      "CISCO - CCNA Cybersecurity & switching/routing",
+      "CISCO - CCNA Cybersecurity & switching/routing"
     ];
-
-    // Populate certificates list dynamically
     const certList = document.getElementById('cert-list');
     certificates.forEach(cert => {
       const li = document.createElement('li');
@@ -288,26 +260,19 @@
       certList.appendChild(li);
     });
 
-    // Contact form handling
     const form = document.getElementById('contact-form');
     const formMsg = document.getElementById('form-msg');
-
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-
-      // Basic validation
       const name = form.name.value.trim();
       const email = form.email.value.trim();
       const message = form.message.value.trim();
-
       if(!name || !email || !message) {
         formMsg.style.color = 'red';
         formMsg.textContent = 'Please fill out all fields.';
         formMsg.style.display = 'block';
         return;
       }
-
-      // Simple email regex validation
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if(!emailRegex.test(email)) {
         formMsg.style.color = 'red';
@@ -315,14 +280,26 @@
         formMsg.style.display = 'block';
         return;
       }
-
-      // If all good, show success message (You can integrate email services here)
       formMsg.style.color = 'green';
       formMsg.textContent = `Thank you, ${name}! Your message has been sent.`;
       formMsg.style.display = 'block';
-
       form.reset();
     });
+
+    // Load text files for confusion matrices
+    async function loadText(id, url) {
+      try {
+        const response = await fetch(url);
+        const text = await response.text();
+        document.getElementById(id).textContent = text;
+      } catch (error) {
+        document.getElementById(id).textContent = "Unable to load file.";
+      }
+    }
+
+    // Replace 'your-username' and 'your-repo' below:
+    loadText("knn-matrix", "https://raw.githubusercontent.com/your-username/your-repo/main/confusion_matrix_pretty_knn.txt");
+    loadText("logreg-matrix", "https://raw.githubusercontent.com/your-username/your-repo/main/confusion_matrix_pretty_log.txt");
   </script>
 </body>
 </html>
